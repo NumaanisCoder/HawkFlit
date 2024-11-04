@@ -1,0 +1,29 @@
+.serviceCard {
+    width: 28%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+  
+  .serviceCard > h3 {
+    font-size: 25px;
+    background-color: transparent;
+  }
+  
+  .serviceCard > img {
+    width: 100%;
+  }
+
+
+  @media (max-width: 600px) {
+    .serviceCard {
+        width: 100%;
+      }
+    
+  }

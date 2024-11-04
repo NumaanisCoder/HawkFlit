@@ -1,0 +1,19 @@
+.squaresBackground {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #f7f7f7, #f7f7f8);
+    
+}
+
+.square {
+    width: clamp(40px, 8vw, 100px); /* Adjust min/max sizes here */
+    height: clamp(40px, 8vw, 100px); /* Makes the squares responsive */
+    border: 1px solid #ececec;
+    z-index: 1;
+}
+
+.square:hover{
+    background-color: white;
+}

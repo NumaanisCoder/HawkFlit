@@ -1,0 +1,35 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    background-color: white;
+    padding: 6px;
+    border-radius: 16px;
+    transition: all linear .5s;
+  }
+  .projectCard > img{
+    width: 100%;
+  }
+  
+  .projectDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .projectCard:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+
+  @media (max-width: 600px) {
+    .projectCard{
+        width: 90%;
+    }
+    .projectCard > img{
+        width: 90%;
+      }
+  }

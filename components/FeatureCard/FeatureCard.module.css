@@ -1,0 +1,36 @@
+.featureCard{
+    color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center; 
+  }
+  .featureCard > h5{
+    font-size: 25px;
+  }
+  .featureCard > p{
+    font-size: 20px;
+    color: gray;
+  }
+  .lottieIcon{
+    width: 170px;
+  }
+
+
+  @media (max-width: 500px) {
+    .featureCard{
+        width: 90%;
+      }
+      .featureCard > h5{
+        font-size: 20px;
+      }
+      .featureCard > p{
+        font-size: 14px;
+        color: gray;
+        text-align: center;
+      }
+      .lottieIcon{
+        width: 120px;
+      }
+  }

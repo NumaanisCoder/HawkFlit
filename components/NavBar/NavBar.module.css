@@ -1,0 +1,91 @@
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.imageContainer > img{
+    height: 50px;
+    
+}
+
+.menuContainer{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menuContainer > li > a{
+    padding: 5px 10px;
+}
+
+.bookContainer{
+    border: none;
+    border-radius: 1px;
+    padding: 5px 20px;
+    background: #0984d5;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+}
+
+.bookContainer::before{
+
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255, 0) 30%,
+        rgba(255,255,255, .8),
+        rgba(255,255,255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Animation */
+
+}
+
+@keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+
+.mobileMenuButton{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    .parent{
+        justify-content: space-between;
+    }
+    .menuContainer, .bookContainer{
+        display: none;
+    }
+    .mobileMenuButton{
+        font-size: 30px;
+        display: block;
+    }
+    .imageContainer{
+        font-size: 18px;
+    }
+    .imageContainer > img{
+        height: 40px;
+    }
+}
