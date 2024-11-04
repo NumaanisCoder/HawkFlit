@@ -10,17 +10,21 @@
 .backgroundWrapper {
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust based on your design needs */
+  height: 600px;
+  /* Adjust based on your design needs */
   border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+  border-bottom-right-radius: 35px;
   overflow: hidden;
 }
 
 .Banner {
   position: absolute;
-  top: 35%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  top: 35%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Center both horizontally and vertically */
   background: transparent;
   height: 600px;
   width: 100%;
@@ -66,60 +70,80 @@
   position: absolute;
   width: 100px;
   height: 100%;
-  background-image: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, .8),
-    rgba(255, 255, 255, 0) 70%
-  );
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, .8),
+      rgba(255, 255, 255, 0) 70%);
   top: 0;
   left: -100px;
   animation: shine 3s infinite linear;
 }
 
 @keyframes shine {
-  0% { left: -100px; }
-  20% { left: 100%; }
-  100% { left: 100%; }
+  0% {
+    left: -100px;
+  }
+
+  20% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 .marqueeContainer {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgBridge {
   position: absolute;
- 
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
-  background: transparent;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: #f7f7f7;
+  width: 260px;
+  height: 7rem;
+  z-index: 9;
+  /* object-fit: cover; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  vertical-align: middle;
 }
 
-.marqueeOne {
+.marquee {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #000e23;
   color: white;
-  height: 50px;
-  padding: 10px 10px;
-  border-top-right-radius: 17px;
-  border-bottom-right-radius: 17px;
+  height: 6.75rem;
+  width: 100%;
+  gap: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
-.marqueeTwo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000e23;
-  color: white;
-  height: 50px;
-  padding: 10px 10px;
-  border-top-left-radius: 17px;
-  border-bottom-left-radius: 17px;
+.marquee img {
+  width: 60px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  animation: scrollImages 7s linear infinite;
+
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(300%);
+  }
+
+  100% {
+    transform: translateX(-300%);
+  }
 }
 
 .serviceHeading {
@@ -130,7 +154,6 @@
 }
 
 .servicesContainer {
-  margin-top: 20px;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -143,7 +166,7 @@
 
 
 
-.featuresContainer{
+.featuresContainer {
   width: 100%;
   margin-top: 40px;
   display: flex;
@@ -155,7 +178,7 @@
 }
 
 
-.projectParentContainer{
+.projectParentContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +187,8 @@
   gap: 12px;
   border-radius: 30px;
 }
-.projectContainer{
+
+.projectContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,7 +199,8 @@
   border-radius: 30px;
   padding: 10px;
 }
-.projectHead{
+
+.projectHead {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,7 +209,8 @@
   gap: 6px;
   padding: 16px 20px;
 }
-.projectHead > h4{
+
+.projectHead>h4 {
   font-size: 50px;
 }
 
@@ -194,43 +220,59 @@
 
 
 @media (max-width: 500px) {
-  .backgroundWrapper{
+  .backgroundWrapper {
     height: 400px;
   }
+
   .Banner {
     top: 32%;
     height: 300px;
     gap: 10px;
   }
+
   .bannerTextOne {
     font-size: 20px;
   }
+
   .bannerTextTwo {
     width: 90%;
     text-align: center;
     font-size: 28px;
   }
+
   .bannerTextThree {
     font-size: 15px;
     text-align: center;
   }
+
   .serviceHeading {
     font-size: 25px;
     width: 90%;
     text-align: center;
     margin: 40px 0;
   }
+
   .servicesContainer {
     width: 100%;
     padding: 10px 15px;
   }
-  .marqueeContainer{
-    top: 59%;
+
+  .imgBridge{
+    height: 5.05rem;
   }
-  .projectContainer{
+  .marquee{
+    height: 5rem;
+    gap: 1.5rem;
+  }
+  .marquee img{
+    width: 55px;
+  }
+
+  .projectContainer {
     flex-direction: column;
   }
-  .projectHead > h4{
+
+  .projectHead>h4 {
     font-size: 34px;
   }
 

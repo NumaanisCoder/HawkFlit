@@ -21,6 +21,7 @@ const dancing = Dancing_Script({ weight: ['500', '700'], subsets: ['latin'] });
 const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 
 export default function Home() {
+
   return (
     <div className={styles.parent}>
       <Head>
@@ -48,17 +49,42 @@ export default function Home() {
             Book a call
           </div>
         </div>
+      </main>
 
         {/* Marquee section */}
-        <div className={`${styles.marqueeContainer} ${poppins.className}`}>
-          <marquee behavior="" direction="" className={styles.marqueeOne}>
-            Your trusted partner for Web Development, App Development, UI/UX, SEO, Analytics, and more!
-          </marquee>
-          <marquee behavior="" direction="" className={styles.marqueeTwo}>
-            Crafting digital solutions for Web Development, App Development, UI/UX, SEO, Analytics, and more!
-          </marquee>
+      <div className={`${styles.marqueeContainer} ${poppins.className}`}>
+        <img src="/marquee/img-bridge.svg" alt="image bridge" className={styles.imgBridge} />
+        <div className={styles.marquee}>
+          <img src="/marquee/aws.svg" alt="" />
+          <img src="/marquee/figma.svg" alt="" />
+          <img src="/marquee/firebase.svg" alt="" />
+          <img src="/marquee/github.svg" alt="" />
+          <img src="/marquee/jira.svg" alt="" />
+          <img src="/marquee/postman.svg" alt="" />
+          <img src="/marquee/angular.svg" alt="" />
+          <img src="/marquee/aws.svg" alt="" />
+          <img src="/marquee/figma.svg" alt="" />
+          <img src="/marquee/firebase.svg" alt="" />
+          <img src="/marquee/github.svg" alt="" />
+          <img src="/marquee/jira.svg" alt="" />
+          <img src="/marquee/postman.svg" alt="" />
+          <img src="/marquee/angular.svg" alt="" />
+          <img src="/marquee/aws.svg" alt="" />
+          <img src="/marquee/figma.svg" alt="" />
+          <img src="/marquee/firebase.svg" alt="" />
+          <img src="/marquee/github.svg" alt="" />
+          <img src="/marquee/jira.svg" alt="" />
+          <img src="/marquee/postman.svg" alt="" />
+          <img src="/marquee/angular.svg" alt="" />
+          <img src="/marquee/aws.svg" alt="" />
+          <img src="/marquee/figma.svg" alt="" />
+          <img src="/marquee/firebase.svg" alt="" />
+          <img src="/marquee/github.svg" alt="" />
+          <img src="/marquee/jira.svg" alt="" />
+          <img src="/marquee/postman.svg" alt="" />
+          <img src="/marquee/angular.svg" alt="" />
         </div>
-      </main>
+      </div>
 
       {/* Services Section */}
       <div className={styles.servicesContainer}>
@@ -68,11 +94,11 @@ export default function Home() {
 
         <div className={styles.servicesContainer}>
 
-        
-        <ServiceCard imgSrc="/assets/img-branding.svg" title="UI/UX Design" description="Create user-friendly interfaces that enhance user experience and engagement." />
-        <ServiceCard imgSrc="/assets/img-produc-design.svg" title="Web Development" description="Build responsive and dynamic websites tailored to your business needs." />
-        <ServiceCard imgSrc="/assets/img-web-design.svg" title="SEO Development" description="Improve your website's visibility and ranking on search engines for better traffic." />
-  
+
+          <ServiceCard imgSrc="/assets/img-branding.svg" title="UI/UX Design" description="Create user-friendly interfaces that enhance user experience and engagement." />
+          <ServiceCard imgSrc="/assets/img-produc-design.svg" title="Web Development" description="Build responsive and dynamic websites tailored to your business needs." />
+          <ServiceCard imgSrc="/assets/img-web-design.svg" title="SEO Development" description="Improve your website's visibility and ranking on search engines for better traffic." />
+
         </div>
       </div>
 
@@ -93,14 +119,14 @@ export default function Home() {
           <p>Designing stunning products, visuals, brands, and websites: empowering startups and innovative companies to shine.</p>
         </div>
         <div className={styles.projectContainer}>
-        <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-        <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-        <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-        <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
         </div>
         <div className={`${styles.bookContainer} ${poppins.className}`}>
-            Book a call
-          </div>
+          Book a call
+        </div>
       </div>
 
 
