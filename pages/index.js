@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { Ubuntu, Dancing_Script, Poppins } from "next/font/google";
 import Boxes from "@/components/Boxes/Boxes";
-import Lottie from 'lottie-react';
 
 import Pen from '../public/assets/pen.json';
 import Computer from '../public/assets/computer.json';
@@ -15,6 +14,9 @@ import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { useEffect, useRef, useState } from "react";
+import ReviewCard from "@/components/ReviewCard/ReviewCard";
+import FaqCard from "@/components/FaqCard/FaqCard";
+
 
 // Font imports
 const ubuntu = Ubuntu({ weight: ['500', '700'], subsets: ['latin'] });
@@ -216,6 +218,49 @@ export default function Home() {
             <span>Adobe XD</span>
           </div>
         </div>
+      </section>
+
+
+      {/* ReviewSection */}
+      <section className={styles.reviewSection}>
+
+        <div className={styles.reviewHead}>
+          <h5>Words of appreciation</h5>
+          <p>Discover what our clients/partners have to say about our design services.</p>
+        </div>
+
+        <div className={styles.reviewCardContainer}>
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+
+        </div>
+
+        <div className={styles.reviewHead}>
+          <h5>Case studies</h5>
+          <p>Explore our successful projects and see the impactful results we've delivered for our clients.</p>
+        </div>
+
+        <div className={styles.projectContainer}>
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+        </div>
+
+        <div className={styles.reviewHead}>
+          <h5>Frequenntly asked Questions</h5>
+        </div>
+
+        <div className={styles.faqContainer}>
+            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+        </div>
+
       </section>
     </div>
   );

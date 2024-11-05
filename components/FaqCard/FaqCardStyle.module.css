@@ -1,0 +1,17 @@
+.container{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 15px;
+}
+
+.container > summary{
+    display: flex;
+    color: #212529;
+    font-size: 22px;
+    justify-content: space-between;
+}
+.container > p{
+    padding: 10px 12px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+}
