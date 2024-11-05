@@ -14,6 +14,7 @@ import Person from '../public/assets/person.json';
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import { useEffect, useRef, useState } from "react";
 
 // Font imports
 const ubuntu = Ubuntu({ weight: ['500', '700'], subsets: ['latin'] });
@@ -21,6 +22,42 @@ const dancing = Dancing_Script({ weight: ['500', '700'], subsets: ['latin'] });
 const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 
 export default function Home() {
+
+  const ref = useRef();
+
+  const [visibilityPercentage, setVisibilityPercentage] = useState(0);
+  const [containerIsVisible, setContainerIsVisible] = useState(false);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Calculate the percentage of the element visible in the viewport
+        const visiblePercentage = entry.intersectionRatio * 100;
+        setVisibilityPercentage(visiblePercentage.toFixed(2)); // Keep it to 2 decimal places
+      },
+      {
+        threshold: Array.from(Array(101).keys(), i => i / 100), // Create thresholds from 0% to 100%
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [visibilityPercentage]);
+
+  useEffect(() => {
+    if (count <= 0 && visibilityPercentage >= 50) {
+      setContainerIsVisible(prev => !prev);
+      setCount(prev => prev + 1);
+    }
+  }, [visibilityPercentage]);
 
   return (
     <div className={styles.parent}>
@@ -51,7 +88,7 @@ export default function Home() {
         </div>
       </main>
 
-        {/* Marquee section */}
+      {/* Marquee section */}
       <div className={`${styles.marqueeContainer} ${poppins.className}`}>
         <img src="/marquee/img-bridge.svg" alt="image bridge" className={styles.imgBridge} />
         <div className={styles.marquee}>
@@ -128,8 +165,58 @@ export default function Home() {
           Book a call
         </div>
       </div>
-
-
+      <section className={styles.toolsSection}>
+        <div className={styles.toolsContainer} ref={ref}>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread1 : ''}`}>
+            <img src="/tools/ic-bootstrap.svg" alt="Bootstrap logo" style={styles.toolIcon} width="16px" />
+            <span>Bootstrap</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread2 : ''}`}>
+            <img src="/tools/ic-aws.svg" alt="aws logo" style={styles.toolIcon} width="16px" />
+            <span>AWS</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread3 : ''}`}>
+            <img src="/tools/ic-figma.svg" alt="figma logo" style={styles.toolIcon} width="16px" />
+            <span>Figma</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread4 : ''}`}>
+            <img src="/tools/ic-firebase.svg" alt="Firebase logo" style={styles.toolIcon} width="16px" />
+            <span>Firebase</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread5 : ''}`}>
+            <img src="/tools/ic-git.svg" alt="Github logo" style={styles.toolIcon} width="16px" />
+            <span>GitHub</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread6 : ''}`}>
+            <img src="/tools/ic-gpt.svg" alt="chatgpt logo" style={styles.toolIcon} width="16px" />
+            <span>ChatGPT</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread7 : ''}`}>
+            <img src="/tools/ic-illustrator.svg" alt="Illustrator logo" style={styles.toolIcon} width="16px" />
+            <span>Illustrator</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread8 : ''}`}>
+            <img src="/tools/ic-jira.svg" alt="Jira logo" style={styles.toolIcon} width="16px" />
+            <span>Jira</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread9 : ''}`}>
+            <img src="/tools/ic-office.svg" alt="Office logo" style={styles.toolIcon} width="16px" />
+            <span>Office</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread10 : ''}`}>
+            <img src="/tools/ic-ps.svg" alt="ps logo" style={styles.toolIcon} width="16px" />
+            <span>Photoshop</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread11 : ''}`}>
+            <img src="/tools/ic-vs.svg" alt="vs code logo" style={styles.toolIcon} width="16px" />
+            <span>VS Code</span>
+          </div>
+          <div class={`${styles.toolItem} ${containerIsVisible ? styles.spread12 : ''}`}>
+            <img src="/tools/ic-xd.svg" alt="Adobe xd logo" style={styles.toolIcon} width="16px" />
+            <span>Adobe XD</span>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
