@@ -3,18 +3,20 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-   justify-content: center; 
+    align-items: flex-start;
+   justify-content: flex-start; 
   }
   .featureCard > h5{
-    font-size: 25px;
+    font-size: 18px;
   }
   .featureCard > p{
-    font-size: 20px;
+    font-size: 14px;
     color: gray;
   }
   .lottieIcon{
-    width: 170px;
+    width: 50px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
   }
 
 
