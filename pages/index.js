@@ -72,23 +72,24 @@ export default function Home() {
 
       {/* Background squares layer */}
       <div className={styles.backgroundWrapper}>
+
+        <main className={styles.main}>
+          <div className={styles.Banner}>
+            <span className={`${dancing.className} ${styles.bannerTextOne}`}>Welcome to Hawkflit</span>
+            <h2 className={`${ubuntu.className} ${styles.bannerTextTwo}`}>
+              Your partner studio for Web Development, App Development, UI/UX, SEO, and Analytics.
+            </h2>
+            <span className={`${poppins.className} ${styles.bannerTextThree}`}>
+              Designing stunning products, visuals, brands, and websites
+            </span>
+            <div className={`${styles.bookContainer} ${poppins.className}`}>
+              Book a call
+            </div>
+          </div>
+        </main>
+
         <Boxes />
       </div>
-
-      <main className={styles.main}>
-        <div className={styles.Banner}>
-          <span className={`${dancing.className} ${styles.bannerTextOne}`}>Welcome to Hawkflit</span>
-          <h2 className={`${ubuntu.className} ${styles.bannerTextTwo}`}>
-            Your partner studio for Web Development, App Development, UI/UX, SEO, and Analytics.
-          </h2>
-          <span className={`${poppins.className} ${styles.bannerTextThree}`}>
-            Designing stunning products, visuals, brands, and websites
-          </span>
-          <div className={`${styles.bookContainer} ${poppins.className}`}>
-            Book a call
-          </div>
-        </div>
-      </main>
 
       {/* Marquee section */}
       <div className={`${styles.marqueeContainer} ${poppins.className}`}>
@@ -254,11 +255,11 @@ export default function Home() {
         </div>
 
         <div className={styles.faqContainer}>
-            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
-            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
-            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
-            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
-            <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"}/>
+          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
+          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
+          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
+          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
+          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
         </div>
 
       </section>
