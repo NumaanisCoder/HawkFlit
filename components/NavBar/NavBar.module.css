@@ -38,7 +38,7 @@
 }
 
 .navLi {
-    line-height: 60px;
+    line-height: 35px;
     margin: 0 5px;
     box-sizing: border-box;
 }
@@ -143,18 +143,16 @@
     /* Full-screen nav for small screens */
     .navUl {
         position: fixed;
+        display: flex;
         flex-direction: column;
         width: 100%;
-        background: white;
-        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        height: calc(100vh - 60px);
         top: 60px;
         left: -100%;
         text-align: center;
-    }
-
-    .navLi {
-        margin: 50px 0;
-        line-height: 30px;
     }
 
     .navLi > a {
