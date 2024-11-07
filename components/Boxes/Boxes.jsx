@@ -3,7 +3,7 @@ import styles from './BoxStyle.module.css';
 
 const Boxes = () => {
   // Number of squares you want to generate
-  const squareCount = 260; 
+  const squareCount = 460; 
 
   return (
     <div className={styles.squaresBackground}>

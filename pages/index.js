@@ -70,26 +70,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Background squares layer */}
-      <div className={styles.backgroundWrapper}>
 
-        <main className={styles.main}>
-          <div className={styles.Banner}>
-            <span className={`${dancing.className} ${styles.bannerTextOne}`}>Welcome to Hawkflit</span>
-            <h2 className={`${ubuntu.className} ${styles.bannerTextTwo}`}>
-              Your partner studio for Web Development, App Development, UI/UX, SEO, and Analytics.
-            </h2>
-            <span className={`${poppins.className} ${styles.bannerTextThree}`}>
-              Designing stunning products, visuals, brands, and websites
-            </span>
-            <div className={`${styles.bookContainer} ${poppins.className}`}>
-              Book a call
-            </div>
+      <main className={styles.main}>
+        <div className={styles.Banner}>
+          <span className={`${dancing.className} ${styles.bannerTextOne}`}>Welcome to Hawkflit</span>
+          <h2 className={`${ubuntu.className} ${styles.bannerTextTwo}`}>
+            Your partner studio for Web Development, App Development, UI/UX, SEO, and Analytics.
+          </h2>
+          <span className={`${poppins.className} ${styles.bannerTextThree}`}>
+            Designing stunning products, visuals, brands, and websites
+          </span>
+          <div className={`${styles.bookContainer} ${poppins.className}`}>
+            Book a call
           </div>
-        </main>
-
-        <Boxes />
-      </div>
+        </div>
+        {/* Background squares layer */}
+        <div className={styles.backgroundWrapper}>
+          <Boxes />
+        </div>
+      </main>
 
       {/* Marquee section */}
       <div className={`${styles.marqueeContainer} ${poppins.className}`}>
@@ -159,10 +158,10 @@ export default function Home() {
           <p>Designing stunning products, visuals, brands, and websites: empowering startups and innovative companies to shine.</p>
         </div>
         <div className={styles.projectContainer}>
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/PB-desktop.PNG?updatedAt=1717067452742" name="Pitch Black Recovery Project" feature="Company Portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/DL-desktop.PNG?updatedAt=1717078594639" name="Delta Line" feature="Business portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/SL-desktop.PNG?updatedAt=1717080192220" name="Sarte Living" feature="Business Portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/WG-desktop.PNG?updatedAt=1717078833976" name="WebGrasper" feature="Blog Application" />
         </div>
         <div className={`${styles.bookContainer} ${poppins.className}`}>
           Book a call
@@ -231,12 +230,45 @@ export default function Home() {
         </div>
 
         <div className={styles.reviewCardContainer}>
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
-          <ReviewCard description={"Dejan is an outstanding designer who excels at quickly developing concepts and effectively incorporating feedback. His work consistently meets high standards of quality. I wholeheartedly recommend him!"} clientName={"Jeremy Smith"} clientCompany={"Founder, Seedlang"} clientImage={"https://www.uiforge.design/assets/img/template/cl-jeremy.webp"} />
+
+          <ReviewCard
+            description={"The team at Hawkflit went above and beyond to deliver a top-notch product that exceeded our expectations. Communication was seamless, and deadlines were always met."}
+            clientName={"Alex Johnson"}
+            clientCompany={"CEO, Techwave"}
+            clientImage={"https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D"}
+          />
+          <ReviewCard
+            description={"I was blown away by the professionalism and attention to detail. From start to finish, they kept us in the loop, turning our vision into reality. Highly recommended!"}
+            clientName={"Jaspreet Singh"}
+            clientCompany={"Founder, FinEdge Solutions"}
+            clientImage={"https://thumbs.dreamstime.com/b/young-adult-indian-sikh-man-26551979.jpg"}
+          />
+          <ReviewCard
+            description={"Working with this team has been a fantastic experience. Their expertise in custom software development has significantly boosted our operations. A true partner in our success!"}
+            clientName={"Raj Mehta"}
+            clientCompany={"CTO, GreenTree"}
+            clientImage={"https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129416.jpg"}
+          />
+          <ReviewCard
+            description={"Impressive work! They were able to pivot quickly when we needed adjustments and delivered exactly what we were looking for. Efficient, skilled, and easy to work with!"}
+            clientName={"Leon Perez"}
+            clientCompany={"Project Manager, BlueSky"}
+            clientImage={"https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydHJhaXQlMjBmYWNlc3xlbnwwfHwwfHx8MA%3D%3D"}
+          />
+          <ReviewCard
+            description={"Hawkflit transformed our ideas into an intuitive, functional app. Their creativity and dedication truly set them apart. Our customers love the new features!"}
+            clientName={"Ben Thompson"}
+            clientCompany={"Co-Founder, SmartGrow"}
+            clientImage={"https://images.unsplash.com/photo-1508341591423-4347099e1f19?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww"}
+          />
+          <ReviewCard
+            description={"Amazing service and outstanding product quality! They’re skilled at finding innovative solutions and made the process enjoyable and stress-free. We couldn't be happier!"}
+            clientName={"Sanjay Kapoor"}
+            clientCompany={"Owner, Artistry Solutions"}
+            clientImage={"https://thumbs.dreamstime.com/b/smiling-indian-man-looking-camera-mature-wearing-spectacles-portrait-middle-eastern-confident-businessman-office-195195079.jpg"}
+          />
+
+
 
         </div>
 
@@ -246,20 +278,62 @@ export default function Home() {
         </div>
 
         <div className={styles.projectContainer}>
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
-          <ProjectCard imgSrc="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" name="Project Name" feature="Project Feature" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/SL-desktop.PNG?updatedAt=1717080192220" name="Sarte Living" feature="Business Portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/EM-figma.png?updatedAt=1717080749572" name="Edu Minati" feature="SEO, CMS" />
         </div>
 
         <div className={styles.reviewHead}>
-          <h5>Frequenntly asked Questions</h5>
+          <h5>Frequently asked Questions</h5>
+        </div>
+        <div className={styles.faqContainer}>
+          <FaqCard question={"What services does your company provide?"} answer={"We offer custom software development, web and mobile applications, and IT consulting."} />
+          <FaqCard question={"How does your development process work?"} answer={"We follow an agile methodology to ensure flexibility and meet client needs at every stage."} />
+          <FaqCard question={"What industries do you specialize in?"} answer={"Our expertise spans finance, healthcare, e-commerce, and more!"} />
+          <FaqCard question={"Do you provide post-launch support?"} answer={"Yes, we offer comprehensive support and maintenance after launch."} />
+          <FaqCard question={"How long does a typical project take?"} answer={"Project timelines vary, but we work to deliver efficiently without compromising quality."} />
         </div>
 
-        <div className={styles.faqContainer}>
-          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
-          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
-          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
-          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
-          <FaqCard question={"Melody Itni Chocalatey kyun hein? "} answer={"Pata nhi bhul gya"} />
+
+      </section>
+
+      <section className={styles.otherProjectSection}>
+        <div className={styles.otherProjectSectionHead}>
+          <h5 className={dancing.className}>Other Projects We have Done</h5>
+        </div>
+        <div className={styles.projectMarquee}>
+
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/electro-free-ecommerce-template.jpg.web" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/pillowmart-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/karma-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg.webp" alt="" srcset="" />
+          <img src="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" alt="" srcset="" />
+
+        </div>
+        <div className={styles.projectMarqueeTwo}>
+
+          <img src="https://www.uiforge.design/assets/img/portfolio/img-slide-tech.webp" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/electro-free-ecommerce-template.jpg.web" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/timezone-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/pillowmart-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg.avif" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/avision-free-template.jpg.webp" alt="" srcset="" />
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/karma-free-template.jpg.avif" alt="" srcset="" />
+
+        </div>
+
+
+
+        <div className={styles.endingSection}>
+          <h5>Ready to <span>transform</span> your brand?</h5>
+          <p>Get started today and elevate your business with our expert web design services.
+            <br />
+            Contact us to discuss your project and discover how our web designer can help bring your vision to life.</p>
+
+          <div className={`${styles.bookContainer} ${poppins.className}`} style={{ width: 'fit-content' }}>
+            Book a call
+          </div>
         </div>
 
       </section>

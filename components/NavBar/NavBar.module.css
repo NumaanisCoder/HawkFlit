@@ -1,91 +1,181 @@
-.parent{
+/* Parent Nav Bar */
+.parent {
+    height: 80px;
+    width: 100%;
+    color: black;
+    position: fixed;
+    background: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    top: 0;
+    z-index: 99;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    padding: 10px 15px;
+    justify-content: space-between;
+    padding: 10px 30px;
 }
 
-.imageContainer{
+/* Logo Styling */
+.Logo {
+    max-width: fit-content;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 12px;
-    font-weight: 600;
-    font-size: 22px;
+    gap: 15px;
+    font-size: 30px;
+    line-height: 60px;
+}
+.Logo > img {
+    width: 40px;
 }
 
-.imageContainer > img{
-    height: 50px;
-    
-}
-
-.menuContainer{
+/* Nav Links */
+.navUl {
     list-style: none;
     display: flex;
     gap: 15px;
+    align-items: center;
+    transition: all 0.5s;
 }
 
-.menuContainer > li > a{
-    padding: 5px 10px;
+.navLi {
+    line-height: 60px;
+    margin: 0 5px;
+    box-sizing: border-box;
 }
 
-.bookContainer{
-    border: none;
+.navLi > a {
+    color: black;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navLi > a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+.bookContainer {
+    border: 1px solid #448ffe;
     border-radius: 1px;
     padding: 5px 20px;
-    background: #0984d5;
+    background: linear-gradient(180deg, #448ffe 0, #1f7bff 100%);
     position: relative;
     overflow: hidden;
     color: white;
     border-radius: 10px;
-}
-
-.bookContainer::before{
-
-
+    max-height: max-content;
+    transition: all linear 0.5s;
+  }
+  .bookContainer:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    border: 1px solid #1f7bff;
+  }
+  
+  .bookContainer::before {
     content: '';
     position: absolute;
     width: 100px;
     height: 100%;
-    background-image: linear-gradient(
-        120deg,
-        rgba(255,255,255, 0) 30%,
-        rgba(255,255,255, .8),
-        rgba(255,255,255, 0) 70%
-    );
+    background-image: linear-gradient(120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, 0) 70%);
     top: 0;
     left: -100px;
-    animation: shine 3s infinite linear; /* Animation */
+    animation: shine 3s infinite linear;
+  }
 
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    20% {
+      left: 100%;
+    }
+  
+    100% {
+      left: 100%;
+    }
+  }
+
+/* Hamburger Icon */
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden by default on desktop */
 }
 
-@keyframes shine {
-    0% {left: -100px}
-    20% {left: 100%}
-    100% {left: 100%}
-}
-
-.mobileMenuButton{
+/* Checkbox to toggle menu visibility */
+.check {
     display: none;
 }
 
-
-@media (max-width: 500px) {
-    .parent{
-        justify-content: space-between;
-    }
-    .menuContainer, .bookContainer{
-        display: none;
-    }
-    .mobileMenuButton{
+/* Responsive Adjustments */
+@media (max-width: 952px) {
+    .Logo {
         font-size: 30px;
+    }
+    .navLi > a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .parent {
+        height: 60px;
+        padding: 0 15px;
+      flex-direction: row-reverse;
+    }
+
+    /* Display the check button on small screens */
+    .checkbtn {
         display: block;
     }
-    .imageContainer{
-        font-size: 18px;
+
+    /* Full-screen nav for small screens */
+    .navUl {
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        height: 100vh;
+        top: 60px;
+        left: -100%;
+        text-align: center;
     }
-    .imageContainer > img{
-        height: 40px;
+
+    .navLi {
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navLi > a {
+        font-size: 20px;
+    }
+
+    /* Toggle nav visibility with checkbox */
+    .check:checked ~ .navUl {
+        left: 0;
+        transition: all 0.6s ease;
+    }
+
+    .check:not(:checked) ~ .navUl {
+        left: -100%;
+        transition: all 0.6s ease;
+    }
+    .Logo{
+        gap: 8px;
+        font-size: 25px;
+    }
+    .Logo > img{
+        width: 28px;
     }
 }
