@@ -220,10 +220,10 @@
 
 .toolsContainer {
   position: relative;
-  max-width: 45rem;
+  max-width: 70rem;
   height: 400px;
   background-position: center;
-  background-image: url('/bg-tools.svg');
+  background-image: url('/tools-section-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
