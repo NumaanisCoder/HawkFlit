@@ -1,0 +1,45 @@
+.footerSection{
+display: flex;
+flex-direction: column;
+gap: 10px;
+color: #e0e0ed !important;
+background-color: #000e23;
+padding: 20px 30px;
+}
+
+.companyInfoContainer{
+    margin-top: 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.otherLinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+    color: #e0e0ed;
+}
+
+.otherLinkContainer > img{
+    width: 40px;
+    object-fit: contain;
+
+}
+
+@media (max-width: 600px) {
+    .footerSection{
+        gap: 20px;
+    }
+    .companyInfoContainer{
+        text-align: center;
+    }
+    .otherLinkContainer{
+        flex-direction: column;
+    }
+    
+}
