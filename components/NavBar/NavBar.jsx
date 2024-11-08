@@ -49,7 +49,7 @@ const NavBar = () => {
       <ul className={style.navUl}>
       
         <li className={style.navLi}>
-          <Link href="/" onClick={menuProvider}>
+          <Link href="/services" onClick={menuProvider}>
             Services
           </Link>
         </li>
