@@ -1,37 +1,38 @@
-.reviewCard{
+.reviewCard {
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 10px 15px;
+    gap: 1rem;
+    padding: 1.25rem 1.75rem;
     border-radius: 20px;
     width: 30%;
 }
 
-.description{
-padding: 5px 10px;
-border-bottom: 1px solid rgb(228, 228, 228);
+.description {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    line-height: 1.3;
 }
 
-.clientInfoContainer{
-display: flex;
-gap: 10px;
-padding: 15px 15px;
+.clientInfoContainer {
+    display: flex;
+    gap: 1rem;
 }
 
-.clientImageContainer{
+.clientImageContainer {}
 
-}
-.clientImageContainer > img{
-    width: 55px;
-    height: 55px;
+.clientImageContainer>img {
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 
-.clientDetails > span{
-color: gray;
+.clientDetails>span {
+    color: gray;
+    font-size: 14px;
+    line-height: 1;
 }
 
 
@@ -40,7 +41,7 @@ color: gray;
 
 
 @media only screen and (max-width: 700px) {
-    .reviewCard{
+    .reviewCard {
         width: 90%;
     }
 }
