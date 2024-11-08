@@ -126,7 +126,7 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <div className={styles.servicesContainer}>
+      <div className={styles.servicesParentContainer}>
         <h3 className={`${poppins.className} ${styles.serviceHeading}`}>
           How can we support you?
         </h3>
@@ -134,9 +134,9 @@ export default function Home() {
         <div className={styles.servicesContainer}>
 
 
-          <ServiceCard imgSrc="/assets/img-branding.svg" title="UI/UX Design" description="Create user-friendly interfaces that enhance user experience and engagement." />
-          <ServiceCard imgSrc="/assets/img-produc-design.svg" title="Web Development" description="Build responsive and dynamic websites tailored to your business needs." />
-          <ServiceCard imgSrc="/assets/img-web-design.svg" title="SEO Development" description="Improve your website's visibility and ranking on search engines for better traffic." />
+          <ServiceCard imgSrc="/assets/img-ui.svg" title="UI/UX Design" description="Create user-friendly interfaces that enhance user experience and engagement." />
+          <ServiceCard imgSrc="/assets/img-web.svg" title="Web Development" description="Build responsive and dynamic websites tailored to your business needs." />
+          <ServiceCard imgSrc="/assets/img-branding.svg" title="SEO Development" description="Improve your website's visibility and ranking on search engines for better traffic." />
 
         </div>
       </div>

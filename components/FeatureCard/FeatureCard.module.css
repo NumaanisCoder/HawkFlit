@@ -1,38 +1,45 @@
-.featureCard{
-    color: white;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-   justify-content: flex-start; 
+.featureCard {
+  color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.featureCard>h5 {
+  font-size: calc(1rem + .3vw);
+  font-weight: 400;
+}
+
+.featureCard>p {
+  font-size: 14px;
+  color: gray;
+}
+
+.lottieIcon {
+  width: 45px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+
+@media (max-width: 500px) {
+  .featureCard {
+    width: 90%;
   }
-  .featureCard > h5{
-    font-size: 18px;
+
+  .featureCard>h5 {
+    font-size: 20px;
   }
-  .featureCard > p{
+
+  .featureCard>p {
     font-size: 14px;
     color: gray;
-  }
-  .lottieIcon{
-    width: 50px;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+
   }
 
-
-  @media (max-width: 500px) {
-    .featureCard{
-        width: 90%;
-      }
-      .featureCard > h5{
-        font-size: 20px;
-      }
-      .featureCard > p{
-        font-size: 14px;
-        color: gray;
-        
-      }
-      .lottieIcon{
-        width: 120px;
-      }
+  .lottieIcon {
+    width: 120px;
   }
+}
