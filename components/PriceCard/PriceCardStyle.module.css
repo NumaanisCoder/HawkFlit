@@ -1,0 +1,88 @@
+.parent{
+    width: 30%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px 15px;
+}
+.parent > h3{
+  padding: 8px 12px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.parent > p{
+  padding: 8px 12px;
+  font-size: clamp(1rem, 1rem, 1rem);
+}
+
+.parent > ul{
+    list-style: none;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.priceContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 5px;
+}
+.priceContainer > h4{
+  font-size: 30px;
+}
+.bookContainer {
+  text-align: center;
+    border: 1px solid #448ffe;
+    border-radius: 1px;
+    padding: 5px 20px;
+    background: linear-gradient(180deg, #448ffe 0, #1f7bff 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    transition: all linear 0.5s;
+  }
+  
+  .bookContainer:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    border: 1px solid #1f7bff;
+  }
+  
+  .bookContainer::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear;
+  }
+
+  .featuresContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .feature > img {
+    width: 20px;
+  }
+
+  
+  @media (max-width: 700px) {
+    .parent{
+      width: 90%;
+    }
+  }

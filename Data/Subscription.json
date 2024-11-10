@@ -1,0 +1,47 @@
+[
+    {
+        "planName": "Carve",
+        "description": "Essential Design Solutions for Budget-Conscious Startups and Entrepreneurs",
+        "price": "$2500",
+        "billingPeriod": "monthly",
+        "features": [
+            "One-week design sprint",
+            "One revision per request",
+            "Up to 1 meeting per week",
+            "Dev ready Figma files",
+            "Available 5 days",
+            "Slack + Ticketing system",
+            "Avg. 3 days delivery"
+        ]
+    },
+    {
+        "planName": "Forge",
+        "description": "Ideal for Startups and Scaleups Seeking Ongoing Design Support and Growth",
+        "price": "$4000",
+        "billingPeriod": "monthly",
+        "features": [
+            "One request at a time",
+            "Unlimited revision per request",
+            "Up to 2 meetings per week",
+            "Dev ready Figma files",
+            "Priority support",
+            "Slack + Ticketing system",
+            "Avg. 3-4 days delivery"
+        ]
+    },
+    {
+        "planName": "Foundry",
+        "description": "Custom Solutions for Agencies Needing Personalized Support",
+        "price": "$7500",
+        "billingPeriod": "monthly",
+        "features": [
+            "Unlimited requests",
+            "Unlimited revision per request",
+            "Flexible meetings",
+            "Dev ready Figma files",
+            "Priority support / Urgent calls",
+            "Slack + Ticketing system",
+            "Avg. 3 days delivery"
+        ]
+    }
+]
