@@ -534,6 +534,10 @@
 
 @media only screen and (max-width: 769px) {
 
+  .featuresContainer{
+    margin: 4rem 0;
+  }
+
   /* Spreading items out with percentages */
   .spread1 {
     left: 16%;
