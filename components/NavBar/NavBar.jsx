@@ -59,7 +59,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className={style.navLi}>
-          <Link href="/about-us" onClick={menuProvider}>
+          <Link href="/pricing" onClick={menuProvider}>
            Pricing
           </Link>
         </li>

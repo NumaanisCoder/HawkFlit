@@ -1,0 +1,27 @@
+.parent{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 14px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.parent > img{
+    width: 32px;
+}
+.parent > h5{
+    font-weight: 500;
+    color: black;
+}
+.parent > p{
+    color: #212529;
+}
+
+@media (max-width: 600px) {
+    .parent{
+        width: 90%;
+    }
+    
+}

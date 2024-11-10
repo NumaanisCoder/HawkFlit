@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '@/styles/ServicesStyle.module.css'
 import Boxes from '@/components/Boxes/Boxes'
 import { Dancing_Script, Poppins, Ubuntu } from 'next/font/google'
+import IndustrialCard from '@/components/IndustrialCard/IndustrialCard'
+
 
 
 
@@ -198,12 +200,43 @@ const services = () => {
                 <div className={styles.targetSectionHead}>
                         <h3>Industries we design for</h3>
                         <p>At UI Forge, we specialize in crafting tailored design solutions for a wide range of industries.
+                            <br />
                         Explore the sectors where our expertise shines.</p>
                 </div>
 
                 <div className={styles.targetCardContainer}>
-                    
-                </div>
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-ecommerce.svg?updatedAt=1731159667903'} 
+        name={'Ecommerce'} 
+        info={'Building online stores focused on user experience, enhancing shopping and boosting conversions.'} 
+    />
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-tech.svg?updatedAt=1731159667842'} 
+        name={'Tech Startups'} 
+        info={'Developing unique digital products that empower startups to excel in competitive markets.'} 
+    />
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-healtcare.svg?updatedAt=1731159667841'} 
+        name={'Healthcare'} 
+        info={'Creating healthcare apps that engage patients and streamline care processes effectively.'} 
+    />
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-finance.svg?updatedAt=1731159667874'} 
+        name={'Finance'} 
+        info={'Building secure financial apps that make complex tasks easy and user-friendly.'} 
+    />
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-education.svg?updatedAt=1731159667788'} 
+        name={'Education'} 
+        info={'Designing educational tools that improve accessibility and transform learning experiences.'} 
+    />
+    <IndustrialCard 
+        img={'https://ik.imagekit.io/xnrxbagp7/ic-real-estates.svg?updatedAt=1731159667785'} 
+        name={'Real Estate'} 
+        info={'Developing property platforms that make buying and selling seamless, enhancing user satisfaction.'} 
+    />
+</div>
+
             </section>
         </div>
     )

@@ -76,6 +76,7 @@
     gap: 35px;
     width: 100%;
     padding: 25px 40px;
+    border-radius: 35px;
   }
 
   .designProcessHead{
@@ -84,7 +85,7 @@
     justify-content: center;
     align-items: start;
     gap: 10px;
-    width: 70%;
+    width: 90%;
   }
 
   .designProcessHead > h3{
@@ -101,13 +102,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 90%;
   }
 
   .processCard{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 20%;
   }
 
   .processCard > span{
@@ -123,13 +125,13 @@
     justify-content: center;
     gap: 20px;
     background: #f7f7f8;
-    width: 100%;
+    width: 80rem;
     padding: 20px 30px;
     border-radius: 30px;
   }
 
   .card{
-    width: 65%;
+    width: 85%;
     display: flex;
     gap: 10px;
     color: black;
@@ -140,6 +142,7 @@
 
   .card >img{
       width: 40%;
+      object-fit: cover;
       border-radius: 10px;
   }
   .cardInfo{
@@ -183,15 +186,25 @@
    justify-content: center;
    gap: 18px;
    padding: 20px 30px;
+   position: relative;
+   max-width: 75rem;
+  height: 400px;
+  background-position: center;
+  background-image: url('/tools-section-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  overflow: hidden;
   }
 
   .guidanceSection > h4{
-    font-size: 40px;
+    font-size: clamp(1rem, 2rem, 3rem);
       text-align: center;
   }
 
   .guidanceSection > p{
-
+    font-size: clamp(.6rem,  1rem, 1.5rem);
+    text-align: center;
   }
 
   .bookContainer {
@@ -241,6 +254,39 @@
     }
   }
 
+
+  .targetSection{
+    width: 80rem;
+    background: #f7f7f8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+    border-radius: 45px;
+  }
+
+  .targetSectionHead{
+    padding: 10px 20px;
+  }
+
+  .targetSectionHead > h3{
+    text-align: center;
+    font-size: clamp(1rem, 1.8rem, 3rem);
+  }
+  .targetSectionHead > p{
+    text-align: center;
+    font-size: clamp(.3rem,  .8rem, 1.5rem);
+  }
+
+  .targetCardContainer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   
 
 
@@ -287,6 +333,12 @@
       color: #e0e0ed !important;
       font-size: 14px;
     }
+    .processCard{
+      width: 100%;
+    }
+    .cardContainer{
+      width: 28rem;
+    }
 
     .card{
       flex-direction: column;
@@ -306,4 +358,9 @@
       font-size: 25px;
         color: black;
     }
+
+    .targetSection{
+      width: 100%;
+    }
+
   }

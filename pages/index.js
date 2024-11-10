@@ -8,7 +8,8 @@ import Computer from '../public/assets/computer.json';
 import Clock from '../public/assets/clock.json';
 import Money from '../public/assets/money.json';
 import Check from '../public/assets/check.json';
-import Person from '../public/assets/person.json';
+// import Person from '../public/assets/person.json';
+import Person from '../public/assets/person.json'
 
 import ServiceCard from "@/components/ServiceCard/ServiceCard";
 import FeatureCard from "@/components/FeatureCard/FeatureCard";
