@@ -165,7 +165,8 @@
 }
 
 .servicesParentContainer {
-  width: 90%;
+  max-width: 80rem;
+  margin: 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,15 +194,17 @@
   border-radius: 45px;
 }
 
-.featuresContainer {
+.featuresParentContainer{
   width: 100%;
-  margin-block: 2rem;
+}
+
+.featuresContainer {
+  max-width: 80rem;
+  margin: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 25px;
-  padding: 25px 35px;
+  gap: 2.5rem;
 }
 
 
@@ -226,7 +229,7 @@
   gap: 16px;
   border-radius: 30px;
   padding: 10px;
-  max-width: 75rem;
+  max-width: 80rem;
 }
 
 .projectHead {
@@ -249,7 +252,8 @@
 
 .toolsContainer {
   position: relative;
-  max-width: 70rem;
+  max-width: 80rem;
+  margin: 0 4rem;
   height: 400px;
   background-position: center;
   background-image: url('/tools-section-bg.svg');
@@ -363,7 +367,6 @@
   align-items: center;
   gap: 3rem;
   width: 100%;
-  box-shadow: 5px -7px 88px blue;
 }
 
 .reviewHead {
@@ -371,6 +374,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 1rem;
 }
 
@@ -381,7 +385,7 @@
 
 .reviewHead>p {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
 }
 
@@ -391,7 +395,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  width: 85%;
+  max-width: 80rem;
 }
 
 .faqContainer {
@@ -628,9 +632,13 @@
     text-align: center;
   }
 
+  .servicesParentContainer{
+    margin: 0 1rem;
+  }
   .serviceHeading {
-    font-size: 25px;
-    width: 90%;
+    font-size: 34px;
+    width: 100%;
+    line-height: 1.1;
     text-align: center;
     margin: 40px 0;
   }
@@ -638,6 +646,10 @@
   .servicesContainer {
     width: 100%;
     padding: 10px 15px;
+  }
+
+  .featuresContainer{
+    margin: 2.5rem 1.125rem;
   }
 
   .imgBridge {
@@ -666,7 +678,7 @@
   }
 
   .reviewHead>p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .reviewCardContainer {

@@ -143,14 +143,16 @@ export default function Home() {
       </div>
 
       {/* Features Section */}
-      <div className={styles.featuresContainer}>
-        <FeatureCard animationData={Pen} title="Unlimited Design Requests" description="Submit unlimited design requests and get all the revisions you need." />
-        <FeatureCard animationData={Clock} title="Quick Turnaround" description="Enjoy fast delivery on all your projects." />
-        <FeatureCard animationData={Person} title="Dedicated Designer" description="Work with a dedicated designer who understands your brand." />
-        <FeatureCard animationData={Check} title="Quality Assurance" description="Our team ensures that every design meets the highest standards of quality." />
-        <FeatureCard animationData={Money} title="Flexible Plans" description="Choose from a range of flexible pricing plans." />
-        <FeatureCard animationData={Computer} title="Creative Solutions" description="Get unique and innovative design solutions." />
-      </div>
+      <section className={styles.featuresParentSection}>
+        <div className={styles.featuresContainer}>
+          <FeatureCard imgURL={'/stack.png'} alt={"stack"} title="Unlimited Design" description="Submit unlimited design requests with the flexibility to revise until every detail meets your expectations." />
+          <FeatureCard imgURL={'/hourglass.png'} alt={"hour glass"} title="Quick Turnaround" description="Enjoy fast, reliable delivery for all your projects, ensuring efficiency and quality every step of the way." />
+          <FeatureCard imgURL={'/person.png'} alt={"person"} title="Dedicated Designer" description="Work closely with a dedicated designer who truly understands your brand, values, and vision." />
+          <FeatureCard imgURL={'/quality.png'} alt={"quality"} title="Quality Assurance" description="Our team guarantees that every design meets the highest standards of quality, creativity, and attention to detail." />
+          <FeatureCard imgURL={'/dollar.png'} alt={"dollar"} title="Flexible Plans" description="Choose from a range of flexible pricing plans designed to fit your needs, budget, and project scope." />
+          <FeatureCard imgURL={'/light.png'} alt={"light"} title="Creative Solutions" description="Access unique and innovative design solutions crafted to elevate your brand." />
+        </div>
+      </section>
 
       {/* Projects Section */}
       <div className={styles.projectParentContainer}>
@@ -159,10 +161,10 @@ export default function Home() {
           <p>Designing stunning products, visuals, brands, and websites: empowering startups and innovative companies to shine.</p>
         </div>
         <div className={styles.projectContainer}>
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/PB-desktop.PNG?updatedAt=1717067452742" name="Pitch Black Recovery Project" feature="Company Portfolio" />
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/DL-desktop.PNG?updatedAt=1717078594639" name="Delta Line" feature="Business portfolio" />
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/SL-desktop.PNG?updatedAt=1717080192220" name="Sarte Living" feature="Business Portfolio" />
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/WG-desktop.PNG?updatedAt=1717078833976" name="WebGrasper" feature="Blog Application" />
+        <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/yc.jpg?updatedAt=1731242557511" name="Yameen Corporation" feature="E-commerce platform" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/pbrp.png?updatedAt=1731239084852" name="Pitch Black Recovery Project" feature="Company Portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/fa.png?updatedAt=1731241351598" name="FA Handicrafts" feature="Business Portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/wg.png?updatedAt=1731239564269" name="WebGrasper" feature="Blog Application" />
         </div>
         <div className={`${styles.bookContainer} ${poppins.className}`}>
           Book a call
@@ -279,8 +281,8 @@ export default function Home() {
         </div>
 
         <div className={styles.projectContainer}>
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/SL-desktop.PNG?updatedAt=1717080192220" name="Sarte Living" feature="Business Portfolio" />
-          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Hawkflit/EM-figma.png?updatedAt=1717080749572" name="Edu Minati" feature="SEO, CMS" />
+        <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/ae.png?updatedAt=1731241415823" name="Attar Electronics" feature="Business portfolio" />
+          <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/sl.png?updatedAt=1731242332472" name="Sarte Living" feature="Business Portfolio" />
         </div>
 
         <div className={styles.reviewHead}>
