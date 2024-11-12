@@ -54,7 +54,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li className={style.navLi}>
-          <Link href="/about-us" onClick={menuProvider}>
+          <Link href="/#case-studies" onClick={menuProvider}>
             Case Studies
           </Link>
         </li>
@@ -69,9 +69,9 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-        <div className={`${style.bookContainer} ${poppins.className}`} style={{width: 'fit-content'}}>
+        <Link href="/contact-us" onClick={menuProvider} className={`${style.bookContainer} ${poppins.className}`} style={{width: 'fit-content'}}>
             Book a call
-          </div>
+          </Link>
         </li>
 
       </ul>

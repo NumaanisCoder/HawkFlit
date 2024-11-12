@@ -81,9 +81,9 @@ export default function Home() {
           <span className={`${poppins.className} ${styles.bannerTextThree}`}>
             Designing stunning products, visuals, brands, and websites
           </span>
-          <div className={`${styles.bookContainer} ${poppins.className}`}>
+          <a href="tel:+918077329438" className={`${styles.bookContainer} ${poppins.className}`}>
             Book a call
-          </div>
+          </a>
         </div>
         {/* Background squares layer */}
         <div className={styles.backgroundWrapper}>
@@ -166,9 +166,9 @@ export default function Home() {
           <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/fa.png?updatedAt=1731241351598" name="FA Handicrafts" feature="Business Portfolio" />
           <ProjectCard imgSrc="https://ik.imagekit.io/94nzrpaat/Projects/wg.png?updatedAt=1731239564269" name="WebGrasper" feature="Blog Application" />
         </div>
-        <div className={`${styles.bookContainer} ${poppins.className}`}>
+        <a href="tel:+918077329438" className={`${styles.bookContainer} ${poppins.className}`}>
           Book a call
-        </div>
+        </a>
       </div>
       <section className={styles.toolsSection}>
         <div className={styles.toolsContainer} ref={ref}>
@@ -275,7 +275,7 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.reviewHead}>
+        <div id="case-studies" className={styles.reviewHead}>
           <h5>Case studies</h5>
           <p>Explore our successful projects and see the impactful results we've delivered for our clients.</p>
         </div>
@@ -334,7 +334,7 @@ export default function Home() {
             <br />
             Contact us to discuss your project and discover how our web designer can help bring your vision to life.</p>
 
-          <div className={`${styles.bookContainer} ${poppins.className}`} style={{ width: 'fit-content' }}>
+          <div className={`${styles.bookContainer} ${poppins.className}`} style={{ width: 'max-content' }}>
             Book a call
           </div>
         </div>

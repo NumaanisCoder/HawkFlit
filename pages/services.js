@@ -189,9 +189,9 @@ const services = () => {
 
                 <h4>Need guidance on your next step?</h4>
                 <p>Reach out, and we'll help you navigate through our services to find the perfect match for your needs.</p>
-                <div className={`${styles.bookContainer} ${poppins.className}`} style={{width: 'fit-content'}}>
+                <a href='tel:+918077329438' className={`${styles.bookContainer} ${poppins.className}`} style={{width: 'fit-content'}}>
             Book a call
-          </div>
+          </a>
 
             </section>
 

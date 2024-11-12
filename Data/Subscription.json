@@ -1,47 +1,47 @@
 [
     {
-        "planName": "Carve",
-        "description": "Essential Design Solutions for Budget-Conscious Startups and Entrepreneurs",
-        "price": "$2500",
-        "billingPeriod": "monthly",
+        "planName": "App Development",
+        "description": "Quickly and easily meet your core design needs",
+        "price": "$199",
         "features": [
-            "One-week design sprint",
-            "One revision per request",
-            "Up to 1 meeting per week",
-            "Dev ready Figma files",
-            "Available 5 days",
-            "Slack + Ticketing system",
-            "Avg. 3 days delivery"
+            "Native app development",
+            "Hybrid app development",
+            "Web app development",
+            "Motion design",
+            "Progressive web app development",
+            "App optimization",
+            "App security",
+            "App maintenance"
         ]
     },
     {
-        "planName": "Forge",
-        "description": "Ideal for Startups and Scaleups Seeking Ongoing Design Support and Growth",
-        "price": "$4000",
-        "billingPeriod": "monthly",
+        "planName": "Website Development",
+        "description": "Creative website design service for everything you need",
+        "price": "$99",
         "features": [
-            "One request at a time",
-            "Unlimited revision per request",
-            "Up to 2 meetings per week",
-            "Dev ready Figma files",
-            "Priority support",
-            "Slack + Ticketing system",
-            "Avg. 3-4 days delivery"
+            "Front-end development",
+            "Back-end development",
+            "React/Next/Angular",
+            "PHP",
+            "Node",
+            "Python",
+            "Responsive design",
+            "Website optimization"
         ]
     },
     {
-        "planName": "Foundry",
-        "description": "Custom Solutions for Agencies Needing Personalized Support",
-        "price": "$7500",
-        "billingPeriod": "monthly",
+        "planName": "Digital Advertising",
+        "description": "Creative service for growth and performance marketing",
+        "price": "$99/m",
         "features": [
-            "Unlimited requests",
-            "Unlimited revision per request",
-            "Flexible meetings",
-            "Dev ready Figma files",
-            "Priority support / Urgent calls",
-            "Slack + Ticketing system",
-            "Avg. 3 days delivery"
+            "Search engine optimization (SEO)",
+            "Social media marketing",
+            "Search engine marketing",
+            "Content strategy",
+            "Meta ads",
+            "Email marketing",
+            "PPC campaigns",
+            "Analytics and reporting"
         ]
     }
 ]
