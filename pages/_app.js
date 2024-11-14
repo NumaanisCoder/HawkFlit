@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="shortcut icon" href="/hawkflit.png" type="image/png" />
+        <meta name="google-site-verification" content="f9c5_PzRfCj9bG3corfANyFsbYaW3I90yMxyKfWpDLM" />
       </Head>
       <div className={poppins.className}>
         <NavBar />
