@@ -4,6 +4,8 @@ import { Ubuntu, Dancing_Script, Poppins } from "next/font/google";
 import Boxes from '@/components/Boxes/Boxes';
 import FeatureCard from '@/components/FeatureCard/FeatureCard';
 import data from '@/Data/Values.json'
+import Link from 'next/link';
+import Head from 'next/head';
 
 
 
@@ -16,19 +18,24 @@ const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 const AboutUs = () => {
   return (
     <div className={styles.parent}>
+        <Head>
+        <title>Hawkflit - About us</title>
+        <meta name="description" content="Hawkflit delivers expert web & app development, graphic design, and digital marketing to help businesses succeed online." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        </Head>
          <main className={styles.main}>
         <div className={styles.Banner}>
           <span className={`${dancing.className} ${styles.bannerTextOne}`}>Get to know us</span>
           <h2 className={`${ubuntu.className} ${styles.bannerTextTwo}`}>
-          About UI forge
+          About Hawkflit
           </h2>
           <span className={`${poppins.className} ${styles.bannerTextThree}`}>
-          UI Forge crafts user-focused digital experiences
-          and strong visual identities to help businesses thrive.
+          Hawkflit delivers expert web & app development, graphic design, and digital marketing to help businesses succeed online.
           </span>
-          <div className={`${styles.bookContainer} ${poppins.className}`}>
+          <Link href={'/contact-us'} className={`${styles.bookContainer} ${poppins.className}`}>
             Book a call
-          </div>
+          </Link>
         </div>
         {/* Background squares layer */}
         <div className={styles.backgroundWrapper}>

@@ -156,19 +156,23 @@
     justify-content: center;
     gap: 25px;
     padding: 20px 10px;
-    max-width: 80rem;
+  
+   
   }
 
   .founderCardContainer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    max-width: 80rem;
   }
   .founderSectionHeader{
       display: flex;
       justify-content: center;
       align-items: center;
+      
   }
   .founderSectionHeader > h3{
     font-size: clamp(2rem, 2.5rem , 2.8rem);

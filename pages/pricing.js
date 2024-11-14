@@ -5,6 +5,8 @@ import { Dancing_Script, Poppins, Ubuntu } from 'next/font/google'
 import PriceCard from '@/components/PriceCard/PriceCard'
 import data from '@/Data/Subscription.json';
 import FaqCard from '@/components/FaqCard/FaqCard'
+import Head from 'next/head'
+
 
 
 
@@ -19,6 +21,11 @@ const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 const services = () => {
     return (
         <div className={styles.parent}>
+            <Head>
+                <title>Our Pricing - Hawkflit</title>
+                <meta name="description" content="Hawkflit delivers expert web & app development, graphic design, and digital marketing to help businesses succeed online." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </Head>
             <main className={styles.main}>
                 
                 <div className={styles.Banner}>

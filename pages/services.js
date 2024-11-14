@@ -3,6 +3,8 @@ import styles from '@/styles/ServicesStyle.module.css'
 import Boxes from '@/components/Boxes/Boxes'
 import { Dancing_Script, Poppins, Ubuntu } from 'next/font/google'
 import IndustrialCard from '@/components/IndustrialCard/IndustrialCard'
+import Head from 'next/head'
+
 
 
 
@@ -16,6 +18,11 @@ const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 const services = () => {
     return (
         <div className={styles.parent}>
+            <Head>
+                <title>Our Services</title>
+                <meta name="description" content="Hawkflit delivers expert web & app development, graphic design, and digital marketing to help businesses succeed online." />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </Head>
             <main className={styles.main}>
                 <div className={styles.Banner}>
                     <span className={`${dancing.className} ${styles.bannerTextOne}`}>Our Expertise</span>

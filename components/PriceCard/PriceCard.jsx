@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './PriceCardStyle.module.css'
 import { Ubuntu, Dancing_Script, Poppins } from "next/font/google";
+import Link from 'next/link';
 
 
 const dancing = Dancing_Script({ weight: ['500', '700'], subsets: ['latin'] });
@@ -15,9 +16,9 @@ const PriceCard = ({data}) => {
         <div className={style.priceContainer}>
             <span className={dancing.className} style={{color: '#448ffe'}}>Starting from</span>
             <h4>{price}</h4>
-            <div className={`${style.bookContainer}`}>
+            <Link href={'/contact-us'} className={`${style.bookContainer}`}>
                 Book a call
-            </div>
+            </Link>
         </div>
 
         <ul className={style.featuresContainer}>

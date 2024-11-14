@@ -39,6 +39,13 @@
     font-size: medium;
     color: rgba(255, 255, 255, 0.75);
   }
+  .addressContainer > a{
+    display: block;
+    padding-left: 4px;
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.75);
+  }
   
   .mainContainer {
     width: 100%;
