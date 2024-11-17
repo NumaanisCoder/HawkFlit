@@ -42,7 +42,7 @@ const NavBar = () => {
       </label>
       <label>
         <Link className={`${style.Logo} ${style.protestStrikeRegular} ${poppins.className}`} href="/" onClick={menuProvider}>
-        <img src="/hawkflit.png" alt="" />
+        <img src="/huhu.png" alt="" />
           Hawkflit
         </Link>
       </label>
