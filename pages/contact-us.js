@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import styles from "@/styles/contact-us.module.css";
 import Head from "next/head";
+import { useSnackbar } from "notistack";
 
 function ContactUs() {
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState("");
+  const { enqueueSnackbar } = useSnackbar();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,6 +30,7 @@ function ContactUs() {
       if (result.success) {
         setMessage("Thanks for contacting us! We'll be in touch shortly.");
         setMessageColor("green");
+        enqueueSnackbar("Response Submitted!", { variant: "success" });
       } else {
         setMessage("Failed to submit form. Please try again.");
         setMessageColor("red");
@@ -123,6 +126,7 @@ function ContactUs() {
                 >
                   {message}
                 </p>
+                
               )}
             </form>
           </div>

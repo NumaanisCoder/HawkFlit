@@ -17,6 +17,7 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { useEffect, useRef, useState } from "react";
 import ReviewCard from "@/components/ReviewCard/ReviewCard";
 import FaqCard from "@/components/FaqCard/FaqCard";
+import Link from "next/link";
 
 
 // Font imports
@@ -80,9 +81,9 @@ export default function Home() {
           <span className={`${poppins.className} ${styles.bannerTextThree}`}>
             Designing stunning products, visuals, brands, and websites
           </span>
-          <a href="tel:+918077329438" className={`${styles.bookContainer} ${poppins.className}`}>
+          <Link href="/contact-us" className={`${styles.bookContainer} ${poppins.className}`}>
             Book a call
-          </a>
+          </Link>
         </div>
         {/* Background squares layer */}
         <div className={styles.backgroundWrapper}>

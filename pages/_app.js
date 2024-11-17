@@ -4,6 +4,8 @@ import "@/styles/globals.css";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { useEffect } from "react";
+import NextTopLoader from "nextjs-toploader";
+import { SnackbarProvider } from "notistack";
 
 const poppins = Poppins({ weight: ['500', '700'], subsets: ['latin'] });
 
@@ -26,6 +28,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <SnackbarProvider autoHideDuration={2000}>
       <Head>
         <link rel="shortcut icon" href="/hawkflitnewlogo.png" type="image/png" />
         <meta
@@ -33,11 +36,13 @@ export default function App({ Component, pageProps }) {
           content="f9c5_PzRfCj9bG3corfANyFsbYaW3I90yMxyKfWpDLM"
         />
       </Head>
+      <NextTopLoader color="#277fff" showSpinner={false} />
       <div className={poppins.className}>
         <NavBar />
         <Component {...pageProps} />
         <Footer />
       </div>
+    </SnackbarProvider>
     </>
   );
 }
