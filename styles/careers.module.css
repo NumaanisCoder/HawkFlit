@@ -1,0 +1,240 @@
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #000e23;
+    margin-top: 60px;
+  }
+  
+  .mainContainer{
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .mainContainer > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.75;
+    -webkit-line-clamp: 2;
+    z-index: 1;
+    width: 70%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+    word-break: break-word;
+    text-transform: capitalize;
+  }
+  .jobOpeningContainer{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    width: 50%;
+    border-radius: 30px;
+  }
+  .jobOpeningContainer h3{
+    color: #1f7bff ;
+    font-size: 1rem;
+  }
+  .teamContainer{
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+  
+  
+
+
+  .main{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* box-shadow: 2px 2px 80px blue; */
+  }
+  
+  .backgroundWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Adjust based on your design needs */
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: hidden;
+
+  }
+  
+  .Banner {
+    position: absolute;
+    z-index: 2;
+    border-radius: 573px;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .bannerTextOne {
+    font-size: 30px;
+    color: #438fff;
+  }
+  
+  .bannerTextTwo {
+    background: var(--Text-gradient, linear-gradient(359deg, #000e23 .92%, #002c6d 117.2%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      -webkit-text-stroke-width: 1;
+      -webkit-text-stroke-color: #FFF;
+    text-align: center;
+    font-size: calc(1.1rem + 2.4vw);
+  }
+  
+  .bannerTextThree {
+    font-size: 25px;
+  }
+  
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding: 2rem;
+    gap: 1.25rem;
+    width: clamp(20rem, 27vw, 25rem);
+  }
+  
+  .formContainer > h2{
+    color: black;
+  }
+  
+  .formContainer input {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 0.5rem;
+    padding-left: 4px;
+    font-size: medium;
+    width: 100%;
+    transition: border-bottom 0.2s linear;
+  }
+  .formContainer input:focus,
+  .formContainer input:active {
+    outline: none;
+    border-bottom: 2px solid #448ffe;
+    transform-origin: left;
+  }
+  .formContainer input::placeholder {
+    color:black;
+  }
+  
+  .formContainer textarea {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 1.1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding-left: 4px;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    transition: border-bottom 0.2s linear;
+  }
+  
+  .formContainer textarea:focus,
+  .formContainer textarea:active {
+    outline: none;
+    border-bottom: 2px solid #448ffe;
+    transform-origin: left;
+  }
+  
+  .formContainer textarea::placeholder {
+    color: black;
+  }
+  
+  .formContainer button {
+    border: 1px solid #448ffe;
+  border-radius: 1px;
+  padding: 5px 20px;
+  background: linear-gradient(180deg, #448ffe 0, #1f7bff 100%);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  transition: all linear 0.5s;
+  width: 100%;
+  height: 2rem;
+  }
+  .formContainer button:hover {
+    background-color: #283032;
+  }
+  
+  .mapContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 2rem;
+  }
+  
+  .mapContainer > h2{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .mapContainer > h2 span{
+    color: transparent;
+    background: var(--Text-gradient, linear-gradient(359deg, #0066fe .92%, #003f9d 117.2%));
+    background-clip: text;
+  }
+  
+  .mapContainer > p{
+    text-align: center;
+    font-size: small;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .mapBind {
+    margin-block: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .mapBind > iframe{
+    border-radius: 20px;
+  }
+  
+ 
+  @media only screen and (max-width: 620px){
+    .root{
+      padding: 1rem;
+    }
+    .mainContainer{
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    .formMainContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
