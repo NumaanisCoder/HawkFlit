@@ -74,13 +74,7 @@ function ContactUs() {
       </Head>
       <div className={styles.root}>
         <section className={styles.mainContainer}>
-          <div className={styles.addressContainer}>
-            <h2>Address</h2>
-            <p>Hawkflit</p>
-            <p>Bazaria Khansama, Rampur - 244901, U.P., India</p>
-            <a href="mailto:info@hawkflit.com">info@hawkflit.com</a>
-            <a href="tel:+919410929946">+91 9410929946</a>
-          </div>
+    
           <div className={styles.formMainContainer}>
             <form className={styles.formContainer} onSubmit={handleSubmit}>
               <h2>Contact form</h2>
